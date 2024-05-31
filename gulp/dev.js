@@ -63,9 +63,11 @@ gulp.task('js:dev', function () {
         .pipe(gulp.dest('./build/js'))
 });
 
-gulp.task('images:dev', function () {
-    return gulp.src('./src/img/**/*', { encoding: false })
+gulp.task('images:dev', function (none) {
+    if (fs.existsSync("./src/img/"))
+        return gulp.src('./src/img/**/*', { encoding: false })
         .pipe(gulp.dest('./build/img/'))
+    none()
 });
 
 gulp.task('fonts:dev', function (none) {
