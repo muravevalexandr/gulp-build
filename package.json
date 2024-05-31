@@ -10,7 +10,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@babel/core": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
@@ -43,5 +42,6 @@
   ],
   "babel": [
     "@babel/env"
-  ]
+  ],
+  "description": ""
 }
