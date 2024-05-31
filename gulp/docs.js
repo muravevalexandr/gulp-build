@@ -84,7 +84,7 @@ gulp.task('js:docs', function () {
 });
 
 gulp.task('images:docs', function (none) {
-    if (fs.existsSync("./src/fonts/"))
+    if (fs.existsSync("./src/img/"))
         return gulp.src('./src/img/**/*', { encoding: false })
         .pipe(changed('./docs/img/'))
         .pipe(webp())
